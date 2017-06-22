@@ -6,6 +6,8 @@
     <link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/bootswatch/3.3.7/united/bootstrap.min.css" rel="stylesheet" integrity="sha384-pVJelSCJ58Og1XDc2E95RVYHZDPb9AVyXsI8NoVpB2xmtxoZKJePbMfE4mlXw7BJ" crossorigin="anonymous">
     <!-- My own CSS Sheet -->
     <link rel="stylesheet" href="assets/css/style.css">
+	<!-- Firebase Link -->
+    <script src="https://www.gstatic.com/firebasejs/4.1.2/firebase.js"></script>
 
 	<title>Train Scheduler</title>
 
@@ -27,70 +29,70 @@
 	
 		<div class="timeTableContainer">
 			<div class="row headerRow">
-				<div class="col-md-2">Train Name</div>
-				<div class="col-md-2">Destination</div>
-				<div class="col-md-4">Frequency (Minutes)</div>
-				<div class="col-md-2">Next Arrival</div>
-				<div class="col-md-2">Minutes Away</div>
+				<div class="col-md-2" id="trainName">Train Name</div>
+				<div class="col-md-2" id="trainDestination">Destination</div>
+				<div class="col-md-4" id="frequency">Frequency (Minutes)</div>
+				<div class="col-md-2" id="nextArrival">Next Arrival</div>
+				<div class="col-md-2" id="minutesAway">Minutes Away</div>
 			</div>
 
 			<div class="row row1">
-				<div class="col-md-2">Empire Builder</div>
-				<div class="col-md-2">Chicago</div>
-				<div class="col-md-4">45</div>
-				<div class="col-md-2">13:45</div>
-				<div class="col-md-2">15</div>
+				<div class="col-md-2" id="trainName">Empire Builder</div>
+				<div class="col-md-2" id="trainDestination">Chicago</div>
+				<div class="col-md-4" id="frequency">45</div>
+				<div class="col-md-2" id="nextArrival">13:45</div>
+				<div class="col-md-2" id="minutesAway">15</div>
 			</div>
 
 			<div class="row row2">
-				<div class="col-md-2">California Zephyr</div>
-				<div class="col-md-2">Los Angeles</div>
-				<div class="col-md-4">180 (Minutes)</div>
-				<div class="col-md-2">14:00</div>
-				<div class="col-md-2">30</div>
+				<div class="col-md-2" id="trainName">California Zephyr</div>
+				<div class="col-md-2" id="trainDestination">Los Angeles</div>
+				<div class="col-md-4" id="frequency">180 (Minutes)</div>
+				<div class="col-md-2" id="nextArrival">14:00</div>
+				<div class="col-md-2" id="minutesAway">30</div>
 			</div>
 
 			<div class="row row3">
-				<div class="col-md-2">Train Name</div>
-				<div class="col-md-2">Destination</div>
-				<div class="col-md-4">Frequency (Minutes)</div>
-				<div class="col-md-2">Next Arrival</div>
-				<div class="col-md-2">Minutes Away</div>
+				<div class="col-md-2" id="trainName">Train Name</div>
+				<div class="col-md-2" id="trainDestination">Destination</div>
+				<div class="col-md-4" id="frequency">Frequency (Minutes)</div>
+				<div class="col-md-2" id="nextArrival">Next Arrival</div>
+				<div class="col-md-2" id="minutesAway">Minutes Away</div>
 			</div>
 
 			<div class="row row4">
-				<div class="col-md-2">Train Name</div>
-				<div class="col-md-2">Destination</div>
-				<div class="col-md-4">Frequency (Minutes)</div>
-				<div class="col-md-2">Next Arrival</div>
-				<div class="col-md-2">Minutes Away</div>
+				<div class="col-md-2" id="trainName">Train Name</div>
+				<div class="col-md-2" id="trainDestination">Destination</div>
+				<div class="col-md-4" id="frequency">Frequency (Minutes)</div>
+				<div class="col-md-2" id="nextArrival">Next Arrival</div>
+				<div class="col-md-2" id="minutesAway">Minutes Away</div>
 			</div>
 
 			<div class="row row5">
-				<div class="col-md-2">Train Name</div>
-				<div class="col-md-2">Destination</div>
-				<div class="col-md-4">Frequency (Minutes)</div>
-				<div class="col-md-2">Next Arrival</div>
-				<div class="col-md-2">Minutes Away</div>
+				<div class="col-md-2" id="trainName">Train Name</div>
+				<div class="col-md-2" id="trainDestination">Destination</div>
+				<div class="col-md-4" id="frequency">Frequency (Minutes)</div>
+				<div class="col-md-2" id="nextArrival">Next Arrival</div>
+				<div class="col-md-2" id="minutesAway">Minutes Away</div>
 			</div>
 
 			<div class="row row6">
 				<div class="rowOutputs1">
-					<div class="col-md-2">Train Name</div>
-					<div class="col-md-2">Destination</div>
-					<div class="col-md-4">Frequency (Minutes)</div>
-					<div class="col-md-2">Next Arrival</div>
-					<div class="col-md-2">Minutes Away</div>
+					<div class="col-md-2" id="trainName">Train Name</div>
+					<div class="col-md-2" id="trainDestination">Destination</div>
+					<div class="col-md-4" id="frequency">Frequency (Minutes)</div>
+					<div class="col-md-2" id="nextArrival">Next Arrival</div>
+					<div class="col-md-2" id="minutesAway">Minutes Away</div>
 				</div>
 			</div>
 
 			<div class="row row7">
 				<div class="rowOutputs1">
-					<div class="col-md-2">Train Name</div>
-					<div class="col-md-2">Destination</div>
-					<div class="col-md-4">Frequency (Minutes)</div>
-					<div class="col-md-2">Next Arrival</div>
-					<div class="col-md-2">Minutes Away</div>
+					<div class="col-md-2" id="trainName">Train Name</div>
+					<div class="col-md-2" id="trainDestination">Destination</div>
+					<div class="col-md-4" id="frequency">Frequency (Minutes)</div>
+					<div class="col-md-2" id="nextArrival">Next Arrival</div>
+					<div class="col-md-2" id="minutesAway">Minutes Away</div>
 				</div>
 			</div>
 		</div>
@@ -108,9 +110,9 @@
 				<div class="inputHeading">First Train Time</div>
 				<input type="text" name="firstTrainTime" class="firstTrainTimeInput"></input>
 				<div class="inputHeading">Frequency</div>
-				<input type="text" name="frequency" class="frequencyInput"></input>
+				<input type="text" name="trainFrequency" class="frequencyInput"></input>
 				<p> </p>
-				<button class="submitButton">Submit</button>
+				<button id="submitButton">Submit</button>
 			</div>
 	</div>	
 </div>
