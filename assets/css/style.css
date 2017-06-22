@@ -1,5 +1,18 @@
+body {
+
+}
+
+h1 {
+	text-align: center;
+}
+
+h3 {
+	text-align: center;
+}
+
 .currentTrainScheduleContainer {
 	border: blue 2px solid;
+	border-radius: 5px;
 }
 
 .currentTrainScheduleHeader {
@@ -8,6 +21,7 @@
 
 .addTrainContainer {
 	border: blue 2px solid;
+	border-radius: 5px;
 }
 
 .addTrainHeader {
@@ -30,6 +44,18 @@
 	border-top: red 2px solid;
 }
 
+.inputHeading {
+	margin-left: 10px;
+	margin-bottom: 5px;
+}
+
+.submitButton {
+	margin-left: 10px;
+	margin-bottom: 10px;
+}
+
 input {
+	display: block;
+	margin: auto;
 	width: 98%;
 }
