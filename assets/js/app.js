@@ -17,23 +17,15 @@
   var firstTrainTimeInput = "";
   var frequencyInput = "";
 
-
-// Other inputs - might not need 
-  var trainName = "";
-  var trainDestination = "";
-  var firstTrainTime = "";
-  var nextArrival = "";
-  var minutesAway = "";
-// --------
+// Button On Click function sends entered info to Firebase
 
 $("#submitButton").on("click", function(event) {
     event.preventDefault();
 
     trainNameInput = $("#trainNameInput").val().trim();
-    trainDestinationInput = $("#destinationInput").val().trim();
+    destinationInput = $("#destinationInput").val().trim();
     firstTrainTimeInput = $("#firstTrainTimeInput").val().trim();
     frequencyInput = $("#frequencyInput").val().trim();
-
 
     database.ref().push({
     trainName: trainNameInput,
@@ -42,3 +34,5 @@ $("#submitButton").on("click", function(event) {
     trainFrequency: frequencyInput,
     });
   });
+
+// 
