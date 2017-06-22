@@ -1,0 +1,35 @@
+.currentTrainScheduleContainer {
+	border: blue 2px solid;
+}
+
+.currentTrainScheduleHeader {
+	background-color: orange;
+}
+
+.addTrainContainer {
+	border: blue 2px solid;
+}
+
+.addTrainHeader {
+	background-color: orange;
+}
+
+.row {
+	border-bottom: green 2px solid;
+}
+
+.col-md-2 {
+	border-left: red 2px solid;
+	border-right: red 2px solid;
+	border-top: red 2px solid;
+}
+
+.col-md-4 {
+	border-left: red 2px solid;
+	border-right: red 2px solid;
+	border-top: red 2px solid;
+}
+
+input {
+	width: 98%;
+}
